@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+/*MENU*/
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.521);
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    transition: all 1s ease;
+    z-index: 10;
+}
+.conteinerLogo{
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    color: rgb(105, 105, 105);
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    flex: 1;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+ul li a:hover{
+    color: rgb(15, 15, 15);
+}
+/*CUERPO*/
+main{
+    
+    height: auto;
+    width: 100%;
+}
+#galeria{
+    margin-top: 12.5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+#galeria img{
+    width: 100%;
+    filter: grayscale(100%) contrast(80%);
+    transition: all 1s ease;
+    z-index: 1;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+#galeria img:hover{
+    filter:none;
+}
+/*PIE DE PAGINA*/
+footer{
+    height: 12vh;
+    width: 100%;
+    margin-top: 4rem;
+    background-color: rgba(255, 255, 255, 0.151);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(105, 105, 105);;
+}
+footer .footerA{
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.footerA i{
+    color: rgb(105, 105, 105);
+}
+footer .footerB{
+    width: 90%;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+}
+footer .footerC{
+    width: 90%;
+    text-align: end;
+    margin-top: 1rem;
+}
