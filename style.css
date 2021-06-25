@@ -82,9 +82,9 @@ header nav ul li a:hover {
 }
 
 .mainHome #galeria {
-  margin-top: 12.5vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
+  margin-top: 11vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
 }
 
 .mainHome #galeria img {
@@ -101,9 +101,61 @@ header nav ul li a:hover {
 .mainHome #galeria img:hover {
   -webkit-filter: none;
           filter: none;
+  -webkit-transform: scale(101%);
+          transform: scale(101%);
 }
 
 .mainAbout {
+  height: 65vh;
+  width: 100%;
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainAbout .secA, .mainAbout .secB {
+  height: 70vh;
+  width: 50%;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainAbout .secA img {
+  width: 300px;
+  -webkit-filter: grayscale(100%) contrast(80%);
+          filter: grayscale(100%) contrast(80%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.mainAbout .secA img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainAbout .secB {
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainProjects {
+  height: 80vh;
+  width: 100%;
+}
+
+.mainContact {
   height: 80vh;
   width: 100%;
 }
