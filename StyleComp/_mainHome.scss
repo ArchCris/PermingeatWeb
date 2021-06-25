@@ -1,0 +1,20 @@
+.mainHome{
+    height: auto;
+    width: 100%;
+    #galeria{
+        margin-top: 12.5vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        img{
+            width: 100%;
+            filter: grayscale(100%) contrast(80%);
+            transition: all 1s ease;
+            z-index: 1;
+            padding-top: 2.5vh;
+            padding-bottom: 2.5vh;
+        }
+        img:hover{
+            filter:none;
+        }
+    }
+}
