@@ -7,4 +7,4 @@ window.addEventListener("scroll", () => {
         menu.style.height="10vh"
     }
 })
-/*EFECTO*/
+

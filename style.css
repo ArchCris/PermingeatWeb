@@ -294,7 +294,7 @@ footer .footerC {
             align-items: center;
   }
   .mainAbout .secA img {
-    width: 350px;
+    width: 90%;
     -webkit-filter: grayscale(100%) contrast(80%);
             filter: grayscale(100%) contrast(80%);
     -webkit-transition: all 1s ease;
