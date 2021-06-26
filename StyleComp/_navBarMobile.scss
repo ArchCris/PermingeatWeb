@@ -49,11 +49,13 @@ header{
             }
             .act1{
             transform: translateY(12px)rotate(-45deg);
+            background-color: white;
             }
             .act2{
                 display: none;}
             .act3{
             transform: translateY(-12px)rotate(45deg);
+            background-color: white;
                 }
                 
         }
@@ -86,9 +88,11 @@ header{
                 text-decoration: none;
                 color: rgb(255, 255, 255);
                 font-size: 25px;
+                transition: color 500ms ease;
             }
             ul li a:hover{
                 color: rgb(15, 15, 15);
+                text-shadow: 0px 0px 10px white;
             }
         }}
         .active{
