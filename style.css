@@ -75,6 +75,17 @@ header nav ul li a:hover {
   color: #0f0f0f;
 }
 
+header .burger {
+  height: 20px;
+  width: 20px;
+  background-color: aqua;
+  display: none;
+}
+
+header .splashMenu {
+  display: none;
+}
+
 /*CUERPO*/
 .mainHome {
   height: auto;
@@ -147,7 +158,8 @@ header nav ul li a:hover {
 }
 
 .mainAbout .secB {
-  padding-right: 10%;
+  padding-left: 4%;
+  padding-right: 8%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -185,7 +197,7 @@ footer {
 }
 
 footer .footerA {
-  width: 90%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,18 +214,116 @@ footer .footerA i {
 }
 
 footer .footerB {
-  width: 90%;
+  width: 95%;
   height: 2px;
   background-color: #c8c8c8;
 }
 
 footer .footerC {
-  width: 90%;
+  width: 95%;
   text-align: end;
   margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
+  /*MENU*/
+  header {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.521);
+    top: 0;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px solid #c8c8c8;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10;
+    position: relative;
+  }
+  header .conteinerLogo {
+    -webkit-box-flex: 0.5;
+        -ms-flex: 0.5;
+            flex: 0.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  header .conteinerLogo a {
+    text-decoration: none;
+    color: dimgray;
+  }
+  header nav {
+    display: none;
+  }
+  header .burgerConteiner {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 20px;
+  }
+  header .burgerConteiner #burger {
+    height: 25px;
+    width: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .burgerConteiner #burger .line1, header .burgerConteiner #burger .line2, header .burgerConteiner #burger .line3 {
+    height: 2px;
+    width: 27px;
+    background-color: dimgray;
+  }
+  header .splashMenu {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(97, 97, 97, 0.753);
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: -10;
+  }
+  header .active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
   footer {
     margin: 10px;
     height: 12vh;

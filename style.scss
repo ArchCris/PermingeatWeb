@@ -20,6 +20,7 @@ body{
 @import "./StyleComp/footer";
 
 @media (max-width: 768px){
+    @import "./StyleComp/navBarMobile";
     @import "./StyleComp/footerMobile";
     @import "./StyleComp/mainAboutMobile";
 }

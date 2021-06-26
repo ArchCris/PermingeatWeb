@@ -8,3 +8,14 @@ window.addEventListener("scroll", () => {
     }
 })
 
+
+/*EFECTO MENU MOBILE*/
+const splashMenu = document.querySelector(`.splashMenu`)
+const burger = document.querySelector(`#burger`)
+burger.addEventListener("click",openMenu)
+
+function openMenu() {
+    splashMenu.classList.toggle("active")
+    console.log("probando")
+}
+
