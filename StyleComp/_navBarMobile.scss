@@ -4,7 +4,8 @@ header{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.521);
     top: 0;
-    position: relative;
+    left: 0;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -58,26 +59,29 @@ header{
         transform: translateX(100%);
         transition: all 1s ease;
         z-index: -10;
-        display: flex;
-        justify-content: ;
         nav{
+            display: block;
             flex: 1;
-            height: 10vh;
-            line-height: 10vh;
+            height: 100vh;
             ul{
+                height: 100%;
                 display: flex;
-                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 list-style: none;
             }
             ul li a{
+                margin: 20px 20px;
                 text-decoration: none;
-                color: rgb(105, 105, 105);
+                color: rgb(255, 255, 255);
+                font-size: 25px;
             }
             ul li a:hover{
                 color: rgb(15, 15, 15);
             }
-    }
-    .active{
-        transform: translateX(0%);
-    }
-}
+        }}
+        .active{
+            transform: translateX(0%);
+}}
+
