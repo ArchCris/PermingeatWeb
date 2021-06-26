@@ -20,8 +20,10 @@ body{
 /*PIE DE PAGINA*/
 @import "./StyleComp/footer";
 
+/*RESPONSIVE PARA MOBILE*/
 @media (max-width: 768px){
     @import "./StyleComp/navBarMobile";
     @import "./StyleComp/footerMobile";
     @import "./StyleComp/mainAboutMobile";
+    @import "./StyleComp/mainContactMobile";
 }

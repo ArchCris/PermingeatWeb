@@ -1,4 +1,37 @@
 .mainContact{
-    height: 80vh;
+    height: 65vh;
     width: 100%;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .mapaConteiner{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #mapid{
+            height: 500px;
+            width: 500px;
+            transition: all 1s ease;
+            filter: grayscale(100%) contrast(80%); }
+        #mapid:hover{
+            filter:none;}
+    }
+    .infoConteiner{
+        padding-left: 4%;
+        padding-right: 8%;
+        font-family: 'Poppins', sans-serif;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(105, 105, 105);
+        #info{
+            height: 500px;
+            width: 500px; }
+    }
 }

@@ -109,6 +109,7 @@ header .splashMenu {
   z-index: 1;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
+  overflow: hidden;
 }
 
 .mainHome #galeria img:hover {
@@ -150,8 +151,8 @@ header .splashMenu {
   width: 400px;
   -webkit-filter: grayscale(100%) contrast(80%);
           filter: grayscale(100%) contrast(80%);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
 .mainAbout .secA img:hover {
@@ -171,8 +172,73 @@ header .splashMenu {
 }
 
 .mainContact {
-  height: 80vh;
+  height: 65vh;
   width: 100%;
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContact .mapaConteiner {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainContact .mapaConteiner #mapid {
+  height: 500px;
+  width: 500px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-filter: grayscale(100%) contrast(80%);
+          filter: grayscale(100%) contrast(80%);
+}
+
+.mainContact .mapaConteiner #mapid:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.mainContact .infoConteiner {
+  padding-left: 4%;
+  padding-right: 8%;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: dimgray;
+}
+
+.mainContact .infoConteiner #info {
+  height: 500px;
+  width: 500px;
 }
 
 /*PIE DE PAGINA*/
@@ -227,6 +293,7 @@ footer .footerC {
   margin-top: 1rem;
 }
 
+/*RESPONSIVE PARA MOBILE*/
 @media (max-width: 768px) {
   /*MENU*/
   header {
@@ -470,6 +537,71 @@ footer .footerC {
   .mainAbout .secB {
     padding: 40px;
     font-family: 'Poppins', sans-serif;
+  }
+  .mainContact {
+    height: 65vh;
+    width: 100%;
+    margin-top: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainContact .mapaConteiner {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainContact .mapaConteiner #mapid {
+    height: 500px;
+    width: 90%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-filter: grayscale(100%) contrast(80%);
+            filter: grayscale(100%) contrast(80%);
+  }
+  .mainContact .mapaConteiner #mapid:hover {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .mainContact .infoConteiner {
+    margin-top: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: dimgray;
+  }
+  .mainContact .infoConteiner #info {
+    height: 500px;
+    width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */

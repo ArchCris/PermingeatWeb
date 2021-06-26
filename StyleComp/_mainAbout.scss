@@ -16,7 +16,7 @@
         img{
             width: 400px;
             filter: grayscale(100%) contrast(80%);
-            transition: all 1s ease;
+            transition: all 500ms ease;
         } 
         img:hover{
             filter: none;
