@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     .mapaConteiner{
+        margin-top: 15vh;
         height: 100%;
         width: 100%;
         display: flex;
@@ -14,16 +15,17 @@
         align-items: center;
         #mapid{
             height: 500px;
-            width: 90%;
+            width: 80%;
             transition: all 1s ease;
             filter: grayscale(100%) contrast(80%); }
         #mapid:hover{
             filter:none;}
     }
     .infoConteiner{
-        margin-top: 5vh;
-        padding-left: 5%;
-        padding-right: 5%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        padding-left: 10%;
+        padding-right: 10%;
         font-family: 'Poppins', sans-serif;
         height: 100%;
         width: 100%;

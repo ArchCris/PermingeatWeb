@@ -557,6 +557,7 @@ footer .footerC {
             align-items: center;
   }
   .mainContact .mapaConteiner {
+    margin-top: 15vh;
     height: 100%;
     width: 100%;
     display: -webkit-box;
@@ -571,7 +572,7 @@ footer .footerC {
   }
   .mainContact .mapaConteiner #mapid {
     height: 500px;
-    width: 90%;
+    width: 80%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     -webkit-filter: grayscale(100%) contrast(80%);
@@ -582,9 +583,10 @@ footer .footerC {
             filter: none;
   }
   .mainContact .infoConteiner {
-    margin-top: 5vh;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding-left: 10%;
+    padding-right: 10%;
     font-family: 'Poppins', sans-serif;
     height: 100%;
     width: 100%;
