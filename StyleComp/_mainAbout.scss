@@ -14,7 +14,7 @@
     }
     .secA{
         img{
-            width: 300px;
+            width: 420px;
             filter: grayscale(100%) contrast(80%);
             transition: all 1s ease;
         } 
@@ -23,6 +23,7 @@
         }    
     }
     .secB{
+        padding-right: 10%;
         font-family: 'Poppins', sans-serif;
     }
 

@@ -134,7 +134,7 @@ header nav ul li a:hover {
 }
 
 .mainAbout .secA img {
-  width: 300px;
+  width: 420px;
   -webkit-filter: grayscale(100%) contrast(80%);
           filter: grayscale(100%) contrast(80%);
   -webkit-transition: all 1s ease;
@@ -147,6 +147,7 @@ header nav ul li a:hover {
 }
 
 .mainAbout .secB {
+  padding-right: 10%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -266,7 +267,6 @@ footer .footerC {
     text-align: center;
     margin-top: 1rem;
   }
-<<<<<<< HEAD
   .mainAbout {
     height: auto;
     width: 100%;
@@ -294,7 +294,7 @@ footer .footerC {
             align-items: center;
   }
   .mainAbout .secA img {
-    width: 300px;
+    width: 350px;
     -webkit-filter: grayscale(100%) contrast(80%);
             filter: grayscale(100%) contrast(80%);
     -webkit-transition: all 1s ease;
@@ -305,10 +305,8 @@ footer .footerC {
             filter: none;
   }
   .mainAbout .secB {
-    padding: 40px;
+    padding: 60px;
     font-family: 'Poppins', sans-serif;
   }
-=======
->>>>>>> gh-pages
 }
 /*# sourceMappingURL=style.css.map */
