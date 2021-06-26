@@ -108,6 +108,19 @@ header nav ul li a:hover {
   width: 100%;
 }
 
+.mainAbout .secA.secB {
+  height: 20px;
+  width: 50%;
+}
+
+.mainAbout .secA img {
+  width: 400px;
+}
+
+.mainAbout .secB {
+  background-color: aqua;
+}
+
 /*PIE DE PAGINA*/
 footer {
   height: 12vh;

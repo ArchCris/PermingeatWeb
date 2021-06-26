@@ -1,5 +1,18 @@
 .mainAbout{
     height: 80vh;
     width: 100%;
+    .secA.secB{
+        height: 20px;
+        width: 50%;
+    }
+    .secA{
+        img{
+            width: 400px;
+        }
+    }
+    .secB{
+        background-color: aqua;
+        
+    }
     
 }
