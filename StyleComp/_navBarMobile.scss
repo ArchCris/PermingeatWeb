@@ -45,7 +45,17 @@ header{
             height: 2px;
             width: 27px;
             background-color: rgb(105, 105, 105);
+            transition: all 1s ease;
             }
+            .act1{
+            transform: translateY(12px)rotate(-45deg);
+            }
+            .act2{
+                display: none;}
+            .act3{
+            transform: translateY(-12px)rotate(45deg);
+                }
+                
         }
     }
     .splashMenu{

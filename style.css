@@ -307,6 +307,19 @@ footer .footerC {
     height: 2px;
     width: 27px;
     background-color: dimgray;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  header .burgerConteiner #burger .act1 {
+    -webkit-transform: translateY(12px) rotate(-45deg);
+            transform: translateY(12px) rotate(-45deg);
+  }
+  header .burgerConteiner #burger .act2 {
+    display: none;
+  }
+  header .burgerConteiner #burger .act3 {
+    -webkit-transform: translateY(-12px) rotate(45deg);
+            transform: translateY(-12px) rotate(45deg);
   }
   header .splashMenu {
     display: inline-block;
