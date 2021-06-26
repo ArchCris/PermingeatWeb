@@ -1,0 +1,30 @@
+.mainAbout{
+    height: auto;
+    width: 100%;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    .secA,.secB{
+        height: auto;
+        width: 100%;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secA{
+        img{
+            width: 300px;
+            filter: grayscale(100%) contrast(80%);
+            transition: all 1s ease;
+        } 
+        img:hover{
+            filter: none;
+        }    
+    }
+    .secB{
+        padding: 40px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+}
