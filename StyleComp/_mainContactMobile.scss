@@ -32,6 +32,10 @@
         color: rgb(105, 105, 105);
         #info{
             height: 500px;
-            width: 500px; }
+            width: 500px;
+            p{
+                padding-top: 5px;
+                padding-bottom: 5px;
+            } }
     }
 }

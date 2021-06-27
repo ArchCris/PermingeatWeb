@@ -264,6 +264,15 @@ header .splashMenu {
   width: 500px;
 }
 
+.mainContact .infoConteiner #info p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mainContact .infoConteiner #info p a {
+  color: dimgray;
+}
+
 /*PIE DE PAGINA*/
 footer {
   margin: 0;
@@ -625,6 +634,10 @@ footer .footerC {
   .mainContact .infoConteiner #info {
     height: 500px;
     width: 500px;
+  }
+  .mainContact .infoConteiner #info p {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
