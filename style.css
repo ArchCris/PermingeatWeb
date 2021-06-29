@@ -44,7 +44,7 @@ header .conteinerLogo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 20px;
+  padding-left: 40px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -54,6 +54,7 @@ header .conteinerLogo a {
 }
 
 header nav {
+  font-size: 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -73,10 +74,13 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: dimgray;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 header nav ul li a:hover {
   color: #0f0f0f;
+  font-weight: 600;
 }
 
 header .burger {
@@ -111,7 +115,11 @@ header .splashMenu {
   z-index: 1;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
   overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mainHome #galeria img:hover {
@@ -169,6 +177,7 @@ header .splashMenu {
 }
 
 .mainProjects {
+  border: none;
   height: auto;
   width: 100%;
 }
@@ -176,8 +185,12 @@ header .splashMenu {
 .mainProjects .proyecto {
   height: 100vh;
   width: 100%;
-  border: solid 1px black;
+}
+
+.mainProjects .proyecto .imageSector {
   padding-top: 15vh;
+  height: 85vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,10 +201,67 @@ header .splashMenu {
           align-items: center;
 }
 
-.mainProjects .proyecto .parteA, .mainProjects .proyecto .parteB, .mainProjects .proyecto .parteC {
-  height: 60vh;
-  width: 30vw;
-  background-color: #a04f4f;
+.mainProjects .proyecto .imageSector img {
+  height: auto;
+  width: 30%;
+  -webkit-filter: grayscale(100%) contrast(80%);
+          filter: grayscale(100%) contrast(80%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.mainProjects .proyecto .imageSector img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(101%);
+          transform: scale(101%);
+}
+
+.mainProjects .proyecto .imageDescription {
+  font-family: 'Poppins', sans-serif;
+  color: dimgray;
+  font-size: 20px;
+  height: 15vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainProjects .proyecto .imageDescription .descA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 50%;
+}
+
+.mainProjects .proyecto .imageDescription .descB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 50%;
 }
 
 .mainContact {
@@ -479,9 +549,9 @@ footer .footerC {
             transform: translateX(0%);
   }
   footer {
-    height: 12vh;
+    height: auto;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 20vh;
     background-color: rgba(255, 255, 255, 0.151);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -638,6 +708,101 @@ footer .footerC {
   .mainContact .infoConteiner #info p {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  .mainProjects {
+    border: none;
+    height: auto;
+    width: 100%;
+  }
+  .mainProjects .proyecto {
+    height: auto;
+    width: 100%;
+  }
+  .mainProjects .proyecto .imageSector {
+    padding-top: 15vh;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainProjects .proyecto .imageSector img {
+    height: auto;
+    width: 80%;
+    -webkit-filter: grayscale(100%) contrast(80%);
+            filter: grayscale(100%) contrast(80%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    margin-bottom: 5vh;
+  }
+  .mainProjects .proyecto .imageSector img:hover {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transform: scale(101%);
+            transform: scale(101%);
+  }
+  .mainProjects .proyecto .imageDescription {
+    font-family: 'Poppins', sans-serif;
+    color: dimgray;
+    font-size: 12px;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainProjects .proyecto .imageDescription .descA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 50%;
+  }
+  .mainProjects .proyecto .imageDescription .descB {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
