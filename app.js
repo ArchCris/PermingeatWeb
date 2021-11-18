@@ -1,12 +1,4 @@
 
-const pantallaInicio = document.querySelector("#splash")
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    pantallaInicio.style.display="none"
-});
-
-
 /*EFECTO MOVIMIENTO MENU*/
 let positionA = window.scrollY
 const menu = document.getElementById("menu")
