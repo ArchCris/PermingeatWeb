@@ -3,7 +3,7 @@
 let positionA = window.scrollY
 const menu = document.getElementById("menu")
 window.addEventListener("scroll", () => {
-    positionB = window.scrollY
+    let positionB = window.scrollY
     if (positionA > positionB) {
         menu.style.height="10vh"
     } else {

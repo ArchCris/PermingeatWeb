@@ -333,6 +333,7 @@ header .splashMenu {
 
 .mainContact .infoConteiner #info p a {
   color: dimgray;
+  text-decoration: none;
 }
 
 /*PIE DE PAGINA*/
@@ -720,6 +721,10 @@ footer .footerC {
   .mainContact .infoConteiner #info p {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  .mainContact .infoConteiner #info p a {
+    color: dimgray;
+    text-decoration: none;
   }
   .mainProjects {
     border: none;
