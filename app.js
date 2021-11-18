@@ -1,3 +1,12 @@
+
+const pantallaInicio = document.querySelector("#splash")
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    pantallaInicio.style.display="none"
+});
+
+
 /*EFECTO MOVIMIENTO MENU*/
 let positionA = window.scrollY
 const menu = document.getElementById("menu")
@@ -45,7 +54,17 @@ var marker = L.marker([-34.57810926536335, -58.44511256218203]).addTo(mymap);
 marker.addEventListener("click", redirection)
 
 function redirection() {
-    console.log("fd")
     window.location.replace("https://www.google.com/maps/place/Tte.+Benjam%C3%ADn+Matienzo+3055,+C1426+DBE,+Buenos+Aires/@-34.578064,-58.4457308,19z/data=!3m1!4b1!4m5!3m4!1s0x95bcb5ea2dff961f:0x4a5a543d46b364b0!8m2!3d-34.5780651!4d-58.4451823");
 }
+
+const splashScreen = document.querySelector("splash")
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+});
+
+
+
+
 

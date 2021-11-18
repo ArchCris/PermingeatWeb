@@ -15,14 +15,12 @@
             align-items: center;
             img{
                 height: auto;
-                width: 80%;
-                filter: grayscale(100%) contrast(80%);
+                width: 30%;
                 transition: all 1s ease;
-                margin-bottom: 5vh;
             }
             img:hover{
-                filter:none;
                 transform: scale(101%);
+                box-shadow: 10px 10px 10px rgba(112, 128, 144, 0.5);
             }
         }
         .imageDescription{

@@ -12,6 +12,13 @@ body {
   scroll-behavior: smooth;
 }
 
+#splash {
+  height: 100vh;
+  width: 100vw;
+  background-color: dimgray;
+  z-index: 88000;
+}
+
 /*MENU NAVEGACION*/
 /*MENU*/
 header {
@@ -68,12 +75,12 @@ header .conteinerLogo a h3 {
 }
 
 header .conteinerLogo a p {
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 0 0 10px;
 }
 
 header nav {
-  font-size: 20px;
+  font-size: 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -223,17 +230,15 @@ header .splashMenu {
 .mainProjects .proyecto .imageSector img {
   height: auto;
   width: 30%;
-  -webkit-filter: grayscale(100%) contrast(80%);
-          filter: grayscale(100%) contrast(80%);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
 .mainProjects .proyecto .imageSector img:hover {
-  -webkit-filter: none;
-          filter: none;
   -webkit-transform: scale(101%);
           transform: scale(101%);
+  -webkit-box-shadow: 10px 10px 10px rgba(112, 128, 144, 0.5);
+          box-shadow: 10px 10px 10px rgba(112, 128, 144, 0.5);
 }
 
 .mainProjects .proyecto .imageDescription {
@@ -751,18 +756,15 @@ footer .footerC {
   }
   .mainProjects .proyecto .imageSector img {
     height: auto;
-    width: 80%;
-    -webkit-filter: grayscale(100%) contrast(80%);
-            filter: grayscale(100%) contrast(80%);
+    width: 30%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    margin-bottom: 5vh;
   }
   .mainProjects .proyecto .imageSector img:hover {
-    -webkit-filter: none;
-            filter: none;
     -webkit-transform: scale(101%);
             transform: scale(101%);
+    -webkit-box-shadow: 10px 10px 10px rgba(112, 128, 144, 0.5);
+            box-shadow: 10px 10px 10px rgba(112, 128, 144, 0.5);
   }
   .mainProjects .proyecto .imageDescription {
     font-family: 'Poppins', sans-serif;

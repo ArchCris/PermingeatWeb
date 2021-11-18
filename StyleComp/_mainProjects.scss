@@ -15,12 +15,11 @@
             img{
                 height: auto;
                 width: 30%;
-                filter: grayscale(100%) contrast(80%);
                 transition: all 1s ease;
             }
             img:hover{
-                filter:none;
                 transform: scale(101%);
+                box-shadow: 10px 10px 10px rgba(112, 128, 144, 0.5);
             }
         }
         .imageDescription{
