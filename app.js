@@ -28,6 +28,7 @@ function openMenu() {
 }
 
 /*PLANO CONTACTO*/
+
 var mymap = L.map('mapid').setView([-34.57810926536335, -58.44511256218203], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
