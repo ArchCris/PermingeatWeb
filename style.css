@@ -377,6 +377,11 @@ footer .footerA i {
   color: dimgray;
 }
 
+footer .footerA a {
+  color: dimgray;
+  text-decoration: none;
+}
+
 footer .footerB {
   width: 95%;
   height: 2px;
@@ -602,6 +607,10 @@ footer .footerC {
   footer .footerA i {
     color: dimgray;
     padding: 20px;
+  }
+  footer .footerA a {
+    color: dimgray;
+    text-decoration: none;
   }
   footer .footerB {
     width: 90%;
